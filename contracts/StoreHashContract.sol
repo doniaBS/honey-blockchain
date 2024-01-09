@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+pragma solidity ^0.5.0;
+
+contract HashStorage {
+    address public owner;
+    mapping(uint256 => bytes32) private hashes;
+    uint256 private nextHashId = 1;
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only the owner can call this function");
+        _;
+    }
+
+    constructor() public{
+        owner = msg.sender;
+    }
+
+    // Function to store an IPFS hash
+    function storeIPFSHash(bytes32 ipfsHash) external onlyOwner {
+        require(ipfsHash.length > 0, "IPFS hash cannot be empty");
+        hashes[nextHashId] = ipfsHash;
+        nextHashId++;
+    }
+
+    // Function to retrieve all stored IPFS hashes
+    function retrieveAllHashes() external view returns (bytes32[] memory) {
+        bytes32[] memory storedHashes = new bytes32[](nextHashId - 1);
+        for (uint256 i = 1; i < nextHashId; i++) {
+            storedHashes[i - 1] = hashes[i];
+        }
+        return storedHashes;
+    }
+}
