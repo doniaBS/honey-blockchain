@@ -16,7 +16,7 @@ contract HashStorage {
     }
 
     // Function to store an IPFS hash
-    function storeIPFSHash(bytes32 ipfsHash) external onlyOwner {
+    function storeIPFSHash(bytes32 ipfsHash) external {
         require(ipfsHash.length > 0, "IPFS hash cannot be empty");
         hashes[nextHashId] = ipfsHash;
         nextHashId++;

@@ -1,5 +1,5 @@
-const StoreHash = artifacts.require("StoreHashContract");
+const StoreHashContract = artifacts.require("HashStorage");
 
 module.exports = function(deployer) {
-  deployer.deploy(StoreHash);
+  deployer.deploy(StoreHashContract);
 };
