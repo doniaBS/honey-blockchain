@@ -21,11 +21,11 @@ contract HashStorage {
         return uint256(keccak256(abi.encodePacked(timestamp, transactionHash))); // Combine timestamp and transaction hash
     }
 
-    // Function to store an IPFS hash
+    /// Function to store an IPFS hash
     function storeIPFSHash(bytes32 ipfsHash) external {
         require(ipfsHash.length > 0, "IPFS hash cannot be empty");
-        hashes[nextHashId] = ipfsHash;
-        nextHashId++;
+        uint256 identifier = generateIdentifier(msg.sender); // Associate the Generated identifier with each hash hash
+        hashes[identifier] = ipfsHash;
     }
 
     // Function to retrieve all stored IPFS hashes
