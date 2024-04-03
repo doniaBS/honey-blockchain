@@ -4,7 +4,6 @@ pragma solidity ^0.5.0;
 contract HashStorage {
     address public owner;
     mapping(uint256 => bytes32) private hashes;
-    uint256 private nextHashId = 1;
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
@@ -26,14 +25,5 @@ contract HashStorage {
         require(ipfsHash.length > 0, "IPFS hash cannot be empty");
         uint256 identifier = generateIdentifier(msg.sender); // Associate the Generated identifier with each hash hash
         hashes[identifier] = ipfsHash;
-    }
-
-    // Function to retrieve all stored IPFS hashes
-    function retrieveAllHashes() external view returns (bytes32[] memory) {
-        bytes32[] memory storedHashes = new bytes32[](nextHashId - 1);
-        for (uint256 i = 1; i < nextHashId; i++) {
-            storedHashes[i - 1] = hashes[i];
-        }
-        return storedHashes;
     }
 }
