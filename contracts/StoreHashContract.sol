@@ -23,7 +23,8 @@ contract HashStorage {
     /// Function to store an IPFS hash
     function storeIPFSHash(bytes32 ipfsHash) external {
         require(ipfsHash.length > 0, "IPFS hash cannot be empty");
-        uint256 identifier = generateIdentifier(msg.sender); // Associate the Generated identifier with each hash hash
+        bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));
+        uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash
         hashes[identifier] = ipfsHash;
     }
 }
