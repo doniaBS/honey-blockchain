@@ -31,15 +31,14 @@ contract BeekeeperContract {
     mapping(uint => Hive) hives;
 
     // Mapping to associate beekeeper IDs with Ethereum addresses
-    mapping(uint => address) beekeeperAddresses;
+    mapping(uint256 => address) private beekeeperAddresses;
 
-    // Function to set the address associated with a beekeeper ID
-    function setBeekeeperAddress(uint256 beekeeperId, address _beekeeperAddress) public onlyOwner {
-        beekeeperAddresses[beekeeperId] = _beekeeperAddress;
+    function registerBeekeeper(uint256 beekeeperId) external {
+        address beekeeperAddress = address(uint160(uint(keccak256(abi.encodePacked(beekeeperId)))));
+        beekeeperAddresses[beekeeperId] = beekeeperAddress;
     }
 
-    // Function to retrieve the address associated with a beekeeper ID
-    function getBeekeeperAddress(uint256 beekeeperId) public view returns (address) {
+    function getBeekeeperAddress(uint256 beekeeperId) external view returns (address) {
         return beekeeperAddresses[beekeeperId];
     }
 
