@@ -30,6 +30,19 @@ contract BeekeeperContract {
     mapping(uint => Beekeeper) beekeepers;
     mapping(uint => Hive) hives;
 
+    // Mapping to associate beekeeper IDs with Ethereum addresses
+    mapping(uint => address) beekeeperAddresses;
+
+    // Function to set the address associated with a beekeeper ID
+    function setBeekeeperAddress(uint256 beekeeperId, address _beekeeperAddress) public onlyOwner {
+        beekeeperAddresses[beekeeperId] = _beekeeperAddress;
+    }
+
+    // Function to retrieve the address associated with a beekeeper ID
+    function getBeekeeperAddress(uint256 beekeeperId) public view returns (address) {
+        return beekeeperAddresses[beekeeperId];
+    }
+
     // fucntion to check the bees state normal or not according to the udage of pests or having diseases
    function checkBeesState(uint hiveId) public returns (bool isOrganicHoney) {
     //check the existence of the hive id 
