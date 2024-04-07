@@ -29,16 +29,27 @@ contract BeekeeperContract {
     // mapping both beekeepers and hives
     mapping(uint => Beekeeper) beekeepers;
     mapping(uint => Hive) hives;
-
-    // Mapping to associate beekeeper IDs with Ethereum addresses
     mapping(uint256 => address) private beekeeperAddresses;
 
-    function registerBeekeeper(uint256 beekeeperId) external {
-        address beekeeperAddress = address(uint160(uint(keccak256(abi.encodePacked(beekeeperId)))));
-        beekeeperAddresses[beekeeperId] = beekeeperAddress;
+    constructor(address[] memory _ganacheAddresses) public {
+        require(_ganacheAddresses.length >= 10, "Insufficient addresses provided");
+
+        // Assign each Beekeeper ID to one of the Ganache addresses
+        for (uint256 i = 0; i < 10; i++) {
+            beekeeperAddresses[i] = _ganacheAddresses[i];
+        }
     }
 
+    // Function to register a beekeeper with a specified Ethereum address
+    function registerBeekeeper(uint256 beekeeperId) external {
+        require(beekeeperId < 10, "Beekeeper ID out of range");
+        beekeepers[beekeeperId].beekeeperId = beekeeperId;
+        beekeepers[beekeeperId].beekeeperAddress = beekeeperAddresses[beekeeperId];
+    }
+
+    // Function to retrieve the Ethereum address of a beekeeper
     function getBeekeeperAddress(uint256 beekeeperId) external view returns (address) {
+        require(beekeeperId < 10, "Beekeeper ID out of range");
         return beekeeperAddresses[beekeeperId];
     }
 
