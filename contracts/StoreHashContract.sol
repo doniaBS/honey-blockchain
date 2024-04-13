@@ -1,17 +1,25 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
 pragma solidity ^0.5.0;
 
+import "./BeekeeperContract.sol";
+
 contract HashStorage {
     address public owner;
+    // Reference to the BeekeeperContract's addre
+    BeekeeperContract public beekeeperContract;
     mapping(uint256 => bytes32) private hashes;
+
+    // Event to emit the stored IPFS hash
+    event IPFSHashStored(uint256 indexed identifier, bytes32 ipfsHash);
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
         _;
     }
 
-    constructor() public{
+    constructor(address _beekeeperContractAddress) public{
         owner = msg.sender;
+        beekeeperContract = BeekeeperContract(_beekeeperContractAddress); // Initialize the BeekeeperContract instance
     }
 
      // Function to generate an identifier based on timestamp and transaction hash
@@ -26,5 +34,8 @@ contract HashStorage {
         bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));
         uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash
         hashes[identifier] = ipfsHash;
+
+        // Emit the IPFS hash stored event
+        emit IPFSHashStored(identifier, ipfsHash);
     }
 }
