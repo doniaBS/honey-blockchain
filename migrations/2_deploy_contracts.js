@@ -6,6 +6,7 @@ module.exports = function(deployer, network, accounts) {
   const ganacheAddresses = accounts.slice(0, 10);
   // Deploy BeekeeperContract, then deploy HashStorage, passing in BeekeeperContract's newly deployed address
   deployer.deploy(BeekeeperContract, ganacheAddresses).then(function() {
-    return deployer.deploy(StoreHashContract, BeekeeperContract.address);
+    return deployer.deploy(StoreHashContract);
+    //return deployer.deploy(StoreHashContract, BeekeeperContract.address);
   });
 };
