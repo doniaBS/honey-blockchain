@@ -6,17 +6,21 @@ pragma solidity ^0.5.0;
 contract HashStorage {
     address public owner;
     //BeekeeperContract public beekeeperContract;// Reference to the BeekeeperContract's address
-    mapping(uint256 => bytes32) private hashes;
+    struct HashInfo { 
+        bytes32 ipfsHash; 
+        address beekeeperAddress;
+    }
+    mapping(uint256 => HashInfo) public hashes;
 
     // Event to emit the stored IPFS hash
-    event IPFSHashStored(uint256 indexed identifier, bytes32 ipfsHash);
+    event IPFSHashStored(uint256 identifier, bytes32 ipfsHash, address beekeeperAddress);
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
         _;
     }
-
-    constructor(address _beekeeperContractAddress) public{
+    //constructor(address _beekeeperContractAddress)
+    constructor() public{
         owner = msg.sender;
         //beekeeperContract = BeekeeperContract(_beekeeperContractAddress); // Initialize the BeekeeperContract instance
     }
@@ -30,10 +34,11 @@ contract HashStorage {
     /// Function to store an IPFS hash
     function storeIPFSHash(bytes32 ipfsHash) external {
         require(ipfsHash.length > 0, "IPFS hash cannot be empty");
+        address beekeeperAddress = msg.sender; // Obtain beekeeper's Ethereum address
         bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));
         uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash
-        hashes[identifier] = ipfsHash;
+        hashes[identifier] = HashInfo(ipfsHash, beekeeperAddress); // Store the hash information along with the beekeeper's Ethereum address in the mapping
         // Emit the IPFS hash stored event
-        emit IPFSHashStored(identifier, ipfsHash);
+        emit IPFSHashStored(identifier, ipfsHash, beekeeperAddress);
     }
 }
