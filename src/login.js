@@ -1,6 +1,4 @@
 // Include Web3.js library
-const web3 = new Web3(window.ethereum);
-
 const loginForm = document.getElementById('login-form');
 const loginButton = document.getElementById('signin');
 
@@ -12,15 +10,12 @@ loginButton.addEventListener('click', async (event) => {
     alert('Please install MetaMask to use this application.');
     return;
   }
-
   try {
     //Get the current account from MetaMask
-    const currentAccount  = await web3.eth.requestAccounts();
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const currentAccount = accounts[0]; // Get the first account from the array
     if (currentAccount) {
       console.log('Beekeeper address (latest):', currentAccount);
-
-    // Your logic to proceed with the beekeeper address (e.g., display or send for data retrieval)
-    // ... your code here ...
    } else {
       console.log('No account connected to MetaMask.');
     }

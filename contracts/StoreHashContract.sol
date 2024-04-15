@@ -15,6 +15,9 @@ contract HashStorage {
     // Event to emit the stored IPFS hash
     event IPFSHashStored(uint256 identifier, bytes32 ipfsHash, address beekeeperAddress);
 
+    // Event to signal receiving the beekeeper address
+    event BeekeeperAddressReceived(address beekeeperAddress);
+
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
         _;
@@ -25,13 +28,20 @@ contract HashStorage {
         //beekeeperContract = BeekeeperContract(_beekeeperContractAddress); // Initialize the BeekeeperContract instance
     }
 
+    // Function to receive the beekeeper address from MetaMask
+    function storeBeekeeperAddress(address beekeeperAddress) public {
+        require(beekeeperAddress != address(0), "Beekeeper address cannot be empty");
+        // Emit an event to signal receiving the beekeeper address
+        emit BeekeeperAddressReceived(beekeeperAddress);
+    }
+
      // Function to generate an identifier based on timestamp and transaction hash
     function generateIdentifier(bytes32 transactionHash) private view returns (uint256) {
         uint256 timestamp = block.timestamp; // Get current timestamp
         return uint256(keccak256(abi.encodePacked(timestamp, transactionHash))); // Combine timestamp and transaction hash
     }
 
-    /// Function to store an IPFS hash
+    // Function to store an IPFS hash
     function storeIPFSHash(bytes32 ipfsHash) external {
         require(ipfsHash.length > 0, "IPFS hash cannot be empty");
         address beekeeperAddress = msg.sender; // Obtain beekeeper's Ethereum address

@@ -20,7 +20,7 @@
                     <div class="signin-form">
                         <h2 class="form-title">Login</h2>
                         <p class="welcome-message">Hello beekeeper! Please log in to access your account.</p>
-                        <form method="POST" class="register-form" id="login-form">
+                        <form class="register-form" id="login-form">
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in via metamask"/>
                             </div>
@@ -31,7 +31,8 @@
         </section>
     </div>
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="vendor/web3/dist/web3.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
     <script src="login.js"></script>
 </body>
 </html>
