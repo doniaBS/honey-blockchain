@@ -4,7 +4,7 @@
        "./src",
        "./build/contracts"
      ],
-     "files": ["./src/**/*.html", "./src/**/*.css", "./src/**/*.js", "./src/images/**/*"],
+     "files": ["./src/**/*.html", "./src/**/*.css", "./src/**/*.js", "./src/images/**/*", "./build/contracts/**/*.json"],
      "routes": {
        "/vendor": "./node_modules"
      }
