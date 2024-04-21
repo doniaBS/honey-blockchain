@@ -167,11 +167,11 @@
       "signature": "0x6890f368"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5060008054600160a060020a0319163317905561053b806100326000396000f3fe6080604052600436106100775763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663348a71cb811461007c578063501895ae146100a35780636890f368146100ee5780638626c9b1146101215780638da5cb5b14610156578063cd6f27a514610187575b600080fd5b34801561008857600080fd5b506100916101b1565b60408051918252519081900360200190f35b3480156100af57600080fd5b506100cd600480360360208110156100c657600080fd5b50356101b7565b60408051928352600160a060020a0390911660208301528051918290030190f35b3480156100fa57600080fd5b506100916004803603602081101561011157600080fd5b5035600160a060020a03166101d9565b34801561012d57600080fd5b506101546004803603602081101561014457600080fd5b5035600160a060020a0316610303565b005b34801561016257600080fd5b5061016b6103df565b60408051600160a060020a039092168252519081900360200190f35b34801561019357600080fd5b50610154600480360360208110156101aa57600080fd5b50356103ee565b60015481565b60026020526000908152604090208054600190910154600160a060020a031682565b600060015b600154811161027057600081815260026020526040902060010154600160a060020a038481169116141561026857600081815260026020908152604091829020548251600160a060020a0387168152918201819052825190927f563ae633124fcca5751b2baf6d55ce4cf2f88c8814819ac3b20d99a6111c5bad928290030190a191506102fe9050565b6001016101de565b50604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603360248201527f495046532068617368206e6f7420666f756e6420666f7220746865206769766560448201527f6e206265656b6565706572206164647265737300000000000000000000000000606482015290519081900360840190fd5b919050565b600160a060020a03811615156103a057604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602160248201527f4265656b656570657220616464726573732063616e6e6f7420626520656d707460448201527f7900000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b60408051600160a060020a038316815290517f0b821827c274bc9b7c169ce860a6722284123484ae37a87bb74de4abb67cb8409181900360200190a150565b600054600160a060020a031681565b60408051336c0100000000000000000000000081026020808401919091524260348085019190915284518085039091018152605490930190935281519190920120600061043a826104e1565b604080518082018252868152600160a060020a0380871660208084018281526000878152600283528690209451855551600194850180549190941673ffffffffffffffffffffffffffffffffffffffff19909116179092558254830190925582518481529081018890528083019190915290519192507feddf90fb4d429d6e11c3f8d4bc25d13f9c5c5ddeba83d8424855e26b63efc07d919081900360600190a150505050565b604080514260208083019190915281830193909352815180820383018152606090910190915280519101209056fea165627a7a72305820e8709a65bf00a5f4e17e83f055cf0651563e598d4422a2e31ed44f957dd6606d0029",
-  "deployedBytecode": "0x6080604052600436106100775763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663348a71cb811461007c578063501895ae146100a35780636890f368146100ee5780638626c9b1146101215780638da5cb5b14610156578063cd6f27a514610187575b600080fd5b34801561008857600080fd5b506100916101b1565b60408051918252519081900360200190f35b3480156100af57600080fd5b506100cd600480360360208110156100c657600080fd5b50356101b7565b60408051928352600160a060020a0390911660208301528051918290030190f35b3480156100fa57600080fd5b506100916004803603602081101561011157600080fd5b5035600160a060020a03166101d9565b34801561012d57600080fd5b506101546004803603602081101561014457600080fd5b5035600160a060020a0316610303565b005b34801561016257600080fd5b5061016b6103df565b60408051600160a060020a039092168252519081900360200190f35b34801561019357600080fd5b50610154600480360360208110156101aa57600080fd5b50356103ee565b60015481565b60026020526000908152604090208054600190910154600160a060020a031682565b600060015b600154811161027057600081815260026020526040902060010154600160a060020a038481169116141561026857600081815260026020908152604091829020548251600160a060020a0387168152918201819052825190927f563ae633124fcca5751b2baf6d55ce4cf2f88c8814819ac3b20d99a6111c5bad928290030190a191506102fe9050565b6001016101de565b50604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603360248201527f495046532068617368206e6f7420666f756e6420666f7220746865206769766560448201527f6e206265656b6565706572206164647265737300000000000000000000000000606482015290519081900360840190fd5b919050565b600160a060020a03811615156103a057604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602160248201527f4265656b656570657220616464726573732063616e6e6f7420626520656d707460448201527f7900000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b60408051600160a060020a038316815290517f0b821827c274bc9b7c169ce860a6722284123484ae37a87bb74de4abb67cb8409181900360200190a150565b600054600160a060020a031681565b60408051336c0100000000000000000000000081026020808401919091524260348085019190915284518085039091018152605490930190935281519190920120600061043a826104e1565b604080518082018252868152600160a060020a0380871660208084018281526000878152600283528690209451855551600194850180549190941673ffffffffffffffffffffffffffffffffffffffff19909116179092558254830190925582518481529081018890528083019190915290519192507feddf90fb4d429d6e11c3f8d4bc25d13f9c5c5ddeba83d8424855e26b63efc07d919081900360600190a150505050565b604080514260208083019190915281830193909352815180820383018152606090910190915280519101209056fea165627a7a72305820e8709a65bf00a5f4e17e83f055cf0651563e598d4422a2e31ed44f957dd6606d0029",
-  "sourceMap": "118:3349:2:-;;;1057:179;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1088:5:2;:18;;-1:-1:-1;;;;;;1088:18:2;1096:10;1088:18;;;118:3349;;;;;;",
-  "deployedSourceMap": "118:3349:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;173:24:2;;;;;;;;;;;;;;;;;;;;396:42;;8:9:-1;5:2;;;30:1;27;20:12;5:2;396:42:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;396:42:2;;;;;;;;;;-1:-1:-1;;;;;396:42:2;;;;;;;;;;;;;;;;2908:556;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2908:556:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;2908:556:2;-1:-1:-1;;;;;2908:556:2;;;1345:285;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1345:285:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1345:285:2;-1:-1:-1;;;;;1345:285:2;;;;;146:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;146:20:2;;;;;;;;-1:-1:-1;;;;;146:20:2;;;;;;;;;;;;;;2056:748;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2056:748:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;2056:748:2;;;173:24;;;;:::o;396:42::-;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;396:42:2;;:::o;2908:556::-;2989:7;3026:1;3009:376;3034:9;;3029:14;;3009:376;;3069:9;;;;:6;:9;;;;;:26;;;-1:-1:-1;;;;;3069:46:2;;;:26;;:46;3065:309;;;3136:21;3160:9;;;:6;:9;;;;;;;;;:18;3233:50;;-1:-1:-1;;;;;3233:50:2;;;;;;;;;;;;3160:18;;3233:50;;;;;;;;3345:13;-1:-1:-1;3338:20:2;;-1:-1:-1;3338:20:2;3065:309;3045:3;;3009:376;;;-1:-1:-1;3395:61:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2908:556;;;;:::o;1345:285::-;-1:-1:-1;;;;;1428:30:2;;;;1420:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1580:42;;;-1:-1:-1;;;;;1580:42:2;;;;;;;;;;;;;;;1345:285;:::o;146:20::-;;;-1:-1:-1;;;;;146:20:2;;:::o;2056:748::-;2308:33;;;2212:10;2308:33;;;;;;;;;;;2337:3;2308:33;;;;;;;;;;26:21:-1;;;22:32;;;6:49;;2308:33:2;;;;;;;2298:44;;;;;;;-1:-1:-1;2374:35:2;2298:44;2374:18;:35::i;:::-;2494:36;;;;;;;;;;;-1:-1:-1;;;;;2494:36:2;;;;;;;;;;-1:-1:-1;2473:18:2;;;:6;:18;;;;;:57;;;;;;;;;;;;;;;-1:-1:-1;;2473:57:2;;;;;;;2630:11;;;;;;;2742:54;;;;;;;;;;;;;;;;;;;;2353:56;;-1:-1:-1;2742:54:2;;;;;;;;;;2056:748;;;;:::o;1722:287::-;1913:44;;;1837:15;1913:44;;;;;;;;;;;;;;;;;26:21:-1;;;22:32;;6:49;;1913:44:2;;;;;;;1903:55;;;;;;1722:287::o",
-  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\r\npragma solidity ^0.5.0;\r\n\r\n//import \"./BeekeeperContract.sol\";\r\n\r\ncontract HashStorage {\r\n    address public owner;\r\n    uint256 public numHashes;\r\n    //BeekeeperContract public beekeeperContract;// Reference to the BeekeeperContract's address\r\n    struct HashInfo { \r\n        bytes32 ipfsHash; \r\n        address beekeeperAddress;\r\n    }\r\n    mapping(uint256 => HashInfo) public hashes;\r\n\r\n    // Event to emit the stored IPFS hash\r\n    event IPFSHashStored(uint256 identifier, bytes32 ipfsHash, address beekeeperAddress);\r\n    // Event to signal receiving the beekeeper address\r\n    event BeekeeperAddressReceived(address beekeeperAddress);\r\n    // Event to signal the retrieval of the on-chain IPFS hash associated with a beekeeper address\r\n    event IPFSHashRetrieved(address beekeeperAddress, bytes32 ipfsHash);\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"Only the owner can call this function\");\r\n        _;\r\n    }\r\n    //constructor(address _beekeeperContractAddress)\r\n    constructor() public{\r\n        owner = msg.sender;\r\n        //beekeeperContract = BeekeeperContract(_beekeeperContractAddress); // Initialize the BeekeeperContract instance\r\n    }\r\n\r\n    // Function to receive the beekeeper address from MetaMask  and trigger the IPFS hash retrieval\r\n    function storeBeekeeperAddress(address beekeeperAddress) public {\r\n        require(beekeeperAddress != address(0), \"Beekeeper address cannot be empty\");\r\n        // Emit an event to signal receiving the beekeeper address\r\n        emit BeekeeperAddressReceived(beekeeperAddress);\r\n    }\r\n\r\n     // Function to generate an identifier based on timestamp and transaction hash\r\n    function generateIdentifier(bytes32 transactionHash) private view returns (uint256) {\r\n        uint256 timestamp = block.timestamp; // Get current timestamp\r\n        return uint256(keccak256(abi.encodePacked(timestamp, transactionHash))); // Combine timestamp and transaction hash\r\n    }\r\n\r\n    // Function to store an IPFS hash\r\n    function storeIPFSHash(bytes32 ipfsHash) external {\r\n        require(ipfsHash.length > 0, \"IPFS hash cannot be empty\");\r\n        address beekeeperAddress = msg.sender; // Obtain beekeeper's Ethereum address\r\n        bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));\r\n        uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash\r\n        hashes[identifier] = HashInfo(ipfsHash, beekeeperAddress); // Store the hash information along with the beekeeper's Ethereum address in the mapping\r\n        numHashes++; // Increment the number of stored hashes\r\n        // Emit the IPFS hash stored event\r\n        emit IPFSHashStored(identifier, ipfsHash, beekeeperAddress);\r\n    }\r\n\r\n    // Function to retrieve the stored on-chain IPFS hash associated with a beekeeper address \r\n    function getIPFSHashByBeekeeperAddress(address beekeeperAddress) public returns (bytes32) {\r\n        for (uint256 i = 1; i <= numHashes; i++) {\r\n            if (hashes[i].beekeeperAddress == beekeeperAddress) {\r\n                bytes32 retrievedHash = hashes[i].ipfsHash; // Access the sotred IPFS hash\r\n                emit IPFSHashRetrieved(beekeeperAddress, retrievedHash); // Emit the IPFSHashRetrieved event\r\n                return retrievedHash;\r\n            }\r\n        }\r\n        revert(\"IPFS hash not found for the given beekeeper address\");\r\n    }\r\n}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060008054600160a060020a031916331790556104b3806100326000396000f3fe6080604052600436106100775763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663348a71cb811461007c578063501895ae146100a35780636890f368146100ee5780638626c9b1146101215780638da5cb5b14610156578063cd6f27a514610187575b600080fd5b34801561008857600080fd5b506100916101b1565b60408051918252519081900360200190f35b3480156100af57600080fd5b506100cd600480360360208110156100c657600080fd5b50356101b7565b60408051928352600160a060020a0390911660208301528051918290030190f35b3480156100fa57600080fd5b506100916004803603602081101561011157600080fd5b5035600160a060020a03166101d9565b34801561012d57600080fd5b506101546004803603602081101561014457600080fd5b5035600160a060020a031661027b565b005b34801561016257600080fd5b5061016b610357565b60408051600160a060020a039092168252519081900360200190f35b34801561019357600080fd5b50610154600480360360208110156101aa57600080fd5b5035610366565b60015481565b60026020526000908152604090208054600190910154600160a060020a031682565b600060015b600154811161027057600081815260026020526040902060010154600160a060020a038481169116141561026857600081815260026020908152604091829020548251600160a060020a0387168152918201819052825190927f563ae633124fcca5751b2baf6d55ce4cf2f88c8814819ac3b20d99a6111c5bad928290030190a191506102769050565b6001016101de565b50600090505b919050565b600160a060020a038116151561031857604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602160248201527f4265656b656570657220616464726573732063616e6e6f7420626520656d707460448201527f7900000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b60408051600160a060020a038316815290517f0b821827c274bc9b7c169ce860a6722284123484ae37a87bb74de4abb67cb8409181900360200190a150565b600054600160a060020a031681565b60408051336c010000000000000000000000008102602080840191909152426034808501919091528451808503909101815260549093019093528151919092012060006103b282610459565b604080518082018252868152600160a060020a0380871660208084018281526000878152600283528690209451855551600194850180549190941673ffffffffffffffffffffffffffffffffffffffff19909116179092558254830190925582518481529081018890528083019190915290519192507feddf90fb4d429d6e11c3f8d4bc25d13f9c5c5ddeba83d8424855e26b63efc07d919081900360600190a150505050565b604080514260208083019190915281830193909352815180820383018152606090910190915280519101209056fea165627a7a72305820aaf343e54ee080e08536ecc3835cacf906b3f885e6c97502a7fd715a39c98faf0029",
+  "deployedBytecode": "0x6080604052600436106100775763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663348a71cb811461007c578063501895ae146100a35780636890f368146100ee5780638626c9b1146101215780638da5cb5b14610156578063cd6f27a514610187575b600080fd5b34801561008857600080fd5b506100916101b1565b60408051918252519081900360200190f35b3480156100af57600080fd5b506100cd600480360360208110156100c657600080fd5b50356101b7565b60408051928352600160a060020a0390911660208301528051918290030190f35b3480156100fa57600080fd5b506100916004803603602081101561011157600080fd5b5035600160a060020a03166101d9565b34801561012d57600080fd5b506101546004803603602081101561014457600080fd5b5035600160a060020a031661027b565b005b34801561016257600080fd5b5061016b610357565b60408051600160a060020a039092168252519081900360200190f35b34801561019357600080fd5b50610154600480360360208110156101aa57600080fd5b5035610366565b60015481565b60026020526000908152604090208054600190910154600160a060020a031682565b600060015b600154811161027057600081815260026020526040902060010154600160a060020a038481169116141561026857600081815260026020908152604091829020548251600160a060020a0387168152918201819052825190927f563ae633124fcca5751b2baf6d55ce4cf2f88c8814819ac3b20d99a6111c5bad928290030190a191506102769050565b6001016101de565b50600090505b919050565b600160a060020a038116151561031857604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602160248201527f4265656b656570657220616464726573732063616e6e6f7420626520656d707460448201527f7900000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b60408051600160a060020a038316815290517f0b821827c274bc9b7c169ce860a6722284123484ae37a87bb74de4abb67cb8409181900360200190a150565b600054600160a060020a031681565b60408051336c010000000000000000000000008102602080840191909152426034808501919091528451808503909101815260549093019093528151919092012060006103b282610459565b604080518082018252868152600160a060020a0380871660208084018281526000878152600283528690209451855551600194850180549190941673ffffffffffffffffffffffffffffffffffffffff19909116179092558254830190925582518481529081018890528083019190915290519192507feddf90fb4d429d6e11c3f8d4bc25d13f9c5c5ddeba83d8424855e26b63efc07d919081900360600190a150505050565b604080514260208083019190915281830193909352815180820383018152606090910190915280519101209056fea165627a7a72305820aaf343e54ee080e08536ecc3835cacf906b3f885e6c97502a7fd715a39c98faf0029",
+  "sourceMap": "118:3234:2:-;;;1057:179;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1088:5:2;:18;;-1:-1:-1;;;;;;1088:18:2;1096:10;1088:18;;;118:3234;;;;;;",
+  "deployedSourceMap": "118:3234:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;173:24:2;;;;;;;;;;;;;;;;;;;;396:42;;8:9:-1;5:2;;;30:1;27;20:12;5:2;396:42:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;396:42:2;;;;;;;;;;-1:-1:-1;;;;;396:42:2;;;;;;;;;;;;;;;;2908:441;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2908:441:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;2908:441:2;-1:-1:-1;;;;;2908:441:2;;;1345:285;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1345:285:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1345:285:2;-1:-1:-1;;;;;1345:285:2;;;;;146:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;146:20:2;;;;;;;;-1:-1:-1;;;;;146:20:2;;;;;;;;;;;;;;2056:748;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2056:748:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;2056:748:2;;;173:24;;;;:::o;396:42::-;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;396:42:2;;:::o;2908:441::-;2989:7;3022:1;3005:285;3030:9;;3025:14;;3005:285;;3061:9;;;;:6;:9;;;;;:26;;;-1:-1:-1;;;;;3061:46:2;;;:26;;:46;3057:226;;;3124:21;3148:9;;;:6;:9;;;;;;;;;:18;3186:50;;-1:-1:-1;;;;;3186:50:2;;;;;;;;;;;;3148:18;;3186:50;;;;;;;;3258:13;-1:-1:-1;3251:20:2;;-1:-1:-1;3251:20:2;3057:226;3041:3;;3005:285;;;-1:-1:-1;3311:1:2;;-1:-1:-1;2908:441:2;;;;:::o;1345:285::-;-1:-1:-1;;;;;1428:30:2;;;;1420:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1580:42;;;-1:-1:-1;;;;;1580:42:2;;;;;;;;;;;;;;;1345:285;:::o;146:20::-;;;-1:-1:-1;;;;;146:20:2;;:::o;2056:748::-;2308:33;;;2212:10;2308:33;;;;;;;;;;;2337:3;2308:33;;;;;;;;;;26:21:-1;;;22:32;;;6:49;;2308:33:2;;;;;;;2298:44;;;;;;;-1:-1:-1;2374:35:2;2298:44;2374:18;:35::i;:::-;2494:36;;;;;;;;;;;-1:-1:-1;;;;;2494:36:2;;;;;;;;;;-1:-1:-1;2473:18:2;;;:6;:18;;;;;:57;;;;;;;;;;;;;;;-1:-1:-1;;2473:57:2;;;;;;;2630:11;;;;;;;2742:54;;;;;;;;;;;;;;;;;;;;2353:56;;-1:-1:-1;2742:54:2;;;;;;;;;;2056:748;;;;:::o;1722:287::-;1913:44;;;1837:15;1913:44;;;;;;;;;;;;;;;;;26:21:-1;;;22:32;;6:49;;1913:44:2;;;;;;;1903:55;;;;;;1722:287::o",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\r\npragma solidity ^0.5.0;\r\n\r\n//import \"./BeekeeperContract.sol\";\r\n\r\ncontract HashStorage {\r\n    address public owner;\r\n    uint256 public numHashes;\r\n    //BeekeeperContract public beekeeperContract;// Reference to the BeekeeperContract's address\r\n    struct HashInfo { \r\n        bytes32 ipfsHash; \r\n        address beekeeperAddress;\r\n    }\r\n    mapping(uint256 => HashInfo) public hashes;\r\n\r\n    // Event to emit the stored IPFS hash\r\n    event IPFSHashStored(uint256 identifier, bytes32 ipfsHash, address beekeeperAddress);\r\n    // Event to signal receiving the beekeeper address\r\n    event BeekeeperAddressReceived(address beekeeperAddress);\r\n    // Event to signal the retrieval of the on-chain IPFS hash associated with a beekeeper address\r\n    event IPFSHashRetrieved(address beekeeperAddress, bytes32 ipfsHash);\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"Only the owner can call this function\");\r\n        _;\r\n    }\r\n    //constructor(address _beekeeperContractAddress)\r\n    constructor() public{\r\n        owner = msg.sender;\r\n        //beekeeperContract = BeekeeperContract(_beekeeperContractAddress); // Initialize the BeekeeperContract instance\r\n    }\r\n\r\n    // Function to receive the beekeeper address from MetaMask  and trigger the IPFS hash retrieval\r\n    function storeBeekeeperAddress(address beekeeperAddress) public {\r\n        require(beekeeperAddress != address(0), \"Beekeeper address cannot be empty\");\r\n        // Emit an event to signal receiving the beekeeper address\r\n        emit BeekeeperAddressReceived(beekeeperAddress);\r\n    }\r\n\r\n     // Function to generate an identifier based on timestamp and transaction hash\r\n    function generateIdentifier(bytes32 transactionHash) private view returns (uint256) {\r\n        uint256 timestamp = block.timestamp; // Get current timestamp\r\n        return uint256(keccak256(abi.encodePacked(timestamp, transactionHash))); // Combine timestamp and transaction hash\r\n    }\r\n\r\n    // Function to store an IPFS hash\r\n    function storeIPFSHash(bytes32 ipfsHash) external {\r\n        require(ipfsHash.length > 0, \"IPFS hash cannot be empty\");\r\n        address beekeeperAddress = msg.sender; // Obtain beekeeper's Ethereum address\r\n        bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));\r\n        uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash\r\n        hashes[identifier] = HashInfo(ipfsHash, beekeeperAddress); // Store the hash information along with the beekeeper's Ethereum address in the mapping\r\n        numHashes++; // Increment the number of stored hashes\r\n        // Emit the IPFS hash stored event\r\n        emit IPFSHashStored(identifier, ipfsHash, beekeeperAddress);\r\n    }\r\n\r\n    // Function to retrieve the stored on-chain IPFS hash associated with a beekeeper address \r\n    function getIPFSHashByBeekeeperAddress(address beekeeperAddress) public returns (bytes32) {\r\n    for (uint256 i = 1; i <= numHashes; i++) {\r\n        if (hashes[i].beekeeperAddress == beekeeperAddress) {\r\n            bytes32 retrievedHash = hashes[i].ipfsHash;\r\n            emit IPFSHashRetrieved(beekeeperAddress, retrievedHash);\r\n            return retrievedHash;\r\n        }\r\n    }\r\n    return bytes32(0); // Return 0 if no hash is found\r\n}\r\n}",
   "sourcePath": "C:/Users/asmab/Desktop/pfe/project/honey-blockchain/contracts/StoreHashContract.sol",
   "ast": {
     "absolutePath": "/C/Users/asmab/Desktop/pfe/project/honey-blockchain/contracts/StoreHashContract.sol",
@@ -2177,13 +2177,13 @@
             "body": {
               "id": 760,
               "nodeType": "Block",
-              "src": "2998:466:2",
+              "src": "2998:351:2",
               "statements": [
                 {
                   "body": {
                     "id": 754,
                     "nodeType": "Block",
-                    "src": "3050:335:2",
+                    "src": "3046:244:2",
                     "statements": [
                       {
                         "condition": {
@@ -2208,7 +2208,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 580,
-                                "src": "3069:6:2",
+                                "src": "3061:6:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_HashInfo_$576_storage_$",
                                   "typeString": "mapping(uint256 => struct HashStorage.HashInfo storage ref)"
@@ -2222,7 +2222,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 723,
-                                "src": "3076:1:2",
+                                "src": "3068:1:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -2233,7 +2233,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "3069:9:2",
+                              "src": "3061:9:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_HashInfo_$576_storage",
                                 "typeString": "struct HashStorage.HashInfo storage ref"
@@ -2247,7 +2247,7 @@
                             "memberName": "beekeeperAddress",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 575,
-                            "src": "3069:26:2",
+                            "src": "3061:26:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -2262,13 +2262,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 717,
-                            "src": "3099:16:2",
+                            "src": "3091:16:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
                             }
                           },
-                          "src": "3069:46:2",
+                          "src": "3061:46:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -2277,11 +2277,11 @@
                         "falseBody": null,
                         "id": 753,
                         "nodeType": "IfStatement",
-                        "src": "3065:309:2",
+                        "src": "3057:226:2",
                         "trueBody": {
                           "id": 752,
                           "nodeType": "Block",
-                          "src": "3117:257:2",
+                          "src": "3109:174:2",
                           "statements": [
                             {
                               "assignments": [
@@ -2294,7 +2294,7 @@
                                   "name": "retrievedHash",
                                   "nodeType": "VariableDeclaration",
                                   "scope": 752,
-                                  "src": "3136:21:2",
+                                  "src": "3124:21:2",
                                   "stateVariable": false,
                                   "storageLocation": "default",
                                   "typeDescriptions": {
@@ -2305,7 +2305,7 @@
                                     "id": 738,
                                     "name": "bytes32",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "3136:7:2",
+                                    "src": "3124:7:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_bytes32",
                                       "typeString": "bytes32"
@@ -2327,7 +2327,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 580,
-                                    "src": "3160:6:2",
+                                    "src": "3148:6:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_HashInfo_$576_storage_$",
                                       "typeString": "mapping(uint256 => struct HashStorage.HashInfo storage ref)"
@@ -2341,7 +2341,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 723,
-                                    "src": "3167:1:2",
+                                    "src": "3155:1:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
                                       "typeString": "uint256"
@@ -2352,7 +2352,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "nodeType": "IndexAccess",
-                                  "src": "3160:9:2",
+                                  "src": "3148:9:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_HashInfo_$576_storage",
                                     "typeString": "struct HashStorage.HashInfo storage ref"
@@ -2366,14 +2366,14 @@
                                 "memberName": "ipfsHash",
                                 "nodeType": "MemberAccess",
                                 "referencedDeclaration": 573,
-                                "src": "3160:18:2",
+                                "src": "3148:18:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
                                 }
                               },
                               "nodeType": "VariableDeclarationStatement",
-                              "src": "3136:42:2"
+                              "src": "3124:42:2"
                             },
                             {
                               "eventCall": {
@@ -2386,7 +2386,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 717,
-                                    "src": "3251:16:2",
+                                    "src": "3204:16:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_address",
                                       "typeString": "address"
@@ -2399,7 +2399,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 739,
-                                    "src": "3269:13:2",
+                                    "src": "3222:13:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_bytes32",
                                       "typeString": "bytes32"
@@ -2422,7 +2422,7 @@
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 598,
-                                  "src": "3233:17:2",
+                                  "src": "3186:17:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$returns$__$",
                                     "typeString": "function (address,bytes32)"
@@ -2436,7 +2436,7 @@
                                 "lValueRequested": false,
                                 "names": [],
                                 "nodeType": "FunctionCall",
-                                "src": "3233:50:2",
+                                "src": "3186:50:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_tuple$__$",
                                   "typeString": "tuple()"
@@ -2444,7 +2444,7 @@
                               },
                               "id": 749,
                               "nodeType": "EmitStatement",
-                              "src": "3228:55:2"
+                              "src": "3181:55:2"
                             },
                             {
                               "expression": {
@@ -2454,7 +2454,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 739,
-                                "src": "3345:13:2",
+                                "src": "3258:13:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
@@ -2463,7 +2463,7 @@
                               "functionReturnParameters": 721,
                               "id": 751,
                               "nodeType": "Return",
-                              "src": "3338:20:2"
+                              "src": "3251:20:2"
                             }
                           ]
                         }
@@ -2488,7 +2488,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 723,
-                      "src": "3029:1:2",
+                      "src": "3025:1:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2503,13 +2503,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 571,
-                      "src": "3034:9:2",
+                      "src": "3030:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "3029:14:2",
+                    "src": "3025:14:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2527,7 +2527,7 @@
                         "name": "i",
                         "nodeType": "VariableDeclaration",
                         "scope": 755,
-                        "src": "3014:9:2",
+                        "src": "3010:9:2",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -2538,7 +2538,7 @@
                           "id": 722,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
-                          "src": "3014:7:2",
+                          "src": "3010:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2559,7 +2559,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "3026:1:2",
+                      "src": "3022:1:2",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -2568,7 +2568,7 @@
                       "value": "1"
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "3014:13:2"
+                    "src": "3010:13:2"
                   },
                   "loopExpression": {
                     "expression": {
@@ -2581,7 +2581,7 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": false,
-                      "src": "3045:3:2",
+                      "src": "3041:3:2",
                       "subExpression": {
                         "argumentTypes": null,
                         "id": 729,
@@ -2589,7 +2589,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 723,
-                        "src": "3045:1:2",
+                        "src": "3041:1:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2602,10 +2602,10 @@
                     },
                     "id": 731,
                     "nodeType": "ExpressionStatement",
-                    "src": "3045:3:2"
+                    "src": "3041:3:2"
                   },
                   "nodeType": "ForStatement",
-                  "src": "3009:376:2"
+                  "src": "3005:285:2"
                 },
                 {
                   "expression": {
@@ -2613,61 +2613,61 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "hexValue": "495046532068617368206e6f7420666f756e6420666f722074686520676976656e206265656b65657065722061646472657373",
+                        "hexValue": "30",
                         "id": 757,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
-                        "kind": "string",
+                        "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "3402:53:2",
+                        "src": "3311:1:2",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_0c7a25c2f0b8f26506fda282783162feb6b03ed1b78a81abba73e7c4df90587f",
-                          "typeString": "literal_string \"IPFS hash not found for the given beekeeper address\""
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
                         },
-                        "value": "IPFS hash not found for the given beekeeper address"
+                        "value": "0"
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_stringliteral_0c7a25c2f0b8f26506fda282783162feb6b03ed1b78a81abba73e7c4df90587f",
-                          "typeString": "literal_string \"IPFS hash not found for the given beekeeper address\""
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
                         }
                       ],
                       "id": 756,
-                      "name": "revert",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        782,
-                        783
-                      ],
-                      "referencedDeclaration": 783,
-                      "src": "3395:6:2",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "3303:7:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
-                        "typeString": "function (string memory) pure"
-                      }
+                        "typeIdentifier": "t_type$_t_bytes32_$",
+                        "typeString": "type(bytes32)"
+                      },
+                      "typeName": "bytes32"
                     },
                     "id": 758,
                     "isConstant": false,
                     "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
+                    "isPure": true,
+                    "kind": "typeConversion",
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3395:61:2",
+                    "src": "3303:10:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
                     }
                   },
+                  "functionReturnParameters": 721,
                   "id": 759,
-                  "nodeType": "ExpressionStatement",
-                  "src": "3395:61:2"
+                  "nodeType": "Return",
+                  "src": "3296:17:2"
                 }
               ]
             },
@@ -2746,17 +2746,17 @@
               "src": "2988:9:2"
             },
             "scope": 762,
-            "src": "2908:556:2",
+            "src": "2908:441:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 763,
-        "src": "118:3349:2"
+        "src": "118:3234:2"
       }
     ],
-    "src": "52:3415:2"
+    "src": "52:3300:2"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/asmab/Desktop/pfe/project/honey-blockchain/contracts/StoreHashContract.sol",
@@ -4762,13 +4762,13 @@
             "body": {
               "id": 760,
               "nodeType": "Block",
-              "src": "2998:466:2",
+              "src": "2998:351:2",
               "statements": [
                 {
                   "body": {
                     "id": 754,
                     "nodeType": "Block",
-                    "src": "3050:335:2",
+                    "src": "3046:244:2",
                     "statements": [
                       {
                         "condition": {
@@ -4793,7 +4793,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 580,
-                                "src": "3069:6:2",
+                                "src": "3061:6:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_HashInfo_$576_storage_$",
                                   "typeString": "mapping(uint256 => struct HashStorage.HashInfo storage ref)"
@@ -4807,7 +4807,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 723,
-                                "src": "3076:1:2",
+                                "src": "3068:1:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -4818,7 +4818,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "3069:9:2",
+                              "src": "3061:9:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_HashInfo_$576_storage",
                                 "typeString": "struct HashStorage.HashInfo storage ref"
@@ -4832,7 +4832,7 @@
                             "memberName": "beekeeperAddress",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 575,
-                            "src": "3069:26:2",
+                            "src": "3061:26:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -4847,13 +4847,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 717,
-                            "src": "3099:16:2",
+                            "src": "3091:16:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
                             }
                           },
-                          "src": "3069:46:2",
+                          "src": "3061:46:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -4862,11 +4862,11 @@
                         "falseBody": null,
                         "id": 753,
                         "nodeType": "IfStatement",
-                        "src": "3065:309:2",
+                        "src": "3057:226:2",
                         "trueBody": {
                           "id": 752,
                           "nodeType": "Block",
-                          "src": "3117:257:2",
+                          "src": "3109:174:2",
                           "statements": [
                             {
                               "assignments": [
@@ -4879,7 +4879,7 @@
                                   "name": "retrievedHash",
                                   "nodeType": "VariableDeclaration",
                                   "scope": 752,
-                                  "src": "3136:21:2",
+                                  "src": "3124:21:2",
                                   "stateVariable": false,
                                   "storageLocation": "default",
                                   "typeDescriptions": {
@@ -4890,7 +4890,7 @@
                                     "id": 738,
                                     "name": "bytes32",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "3136:7:2",
+                                    "src": "3124:7:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_bytes32",
                                       "typeString": "bytes32"
@@ -4912,7 +4912,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 580,
-                                    "src": "3160:6:2",
+                                    "src": "3148:6:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_HashInfo_$576_storage_$",
                                       "typeString": "mapping(uint256 => struct HashStorage.HashInfo storage ref)"
@@ -4926,7 +4926,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 723,
-                                    "src": "3167:1:2",
+                                    "src": "3155:1:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
                                       "typeString": "uint256"
@@ -4937,7 +4937,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "nodeType": "IndexAccess",
-                                  "src": "3160:9:2",
+                                  "src": "3148:9:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_HashInfo_$576_storage",
                                     "typeString": "struct HashStorage.HashInfo storage ref"
@@ -4951,14 +4951,14 @@
                                 "memberName": "ipfsHash",
                                 "nodeType": "MemberAccess",
                                 "referencedDeclaration": 573,
-                                "src": "3160:18:2",
+                                "src": "3148:18:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
                                 }
                               },
                               "nodeType": "VariableDeclarationStatement",
-                              "src": "3136:42:2"
+                              "src": "3124:42:2"
                             },
                             {
                               "eventCall": {
@@ -4971,7 +4971,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 717,
-                                    "src": "3251:16:2",
+                                    "src": "3204:16:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_address",
                                       "typeString": "address"
@@ -4984,7 +4984,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 739,
-                                    "src": "3269:13:2",
+                                    "src": "3222:13:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_bytes32",
                                       "typeString": "bytes32"
@@ -5007,7 +5007,7 @@
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 598,
-                                  "src": "3233:17:2",
+                                  "src": "3186:17:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$returns$__$",
                                     "typeString": "function (address,bytes32)"
@@ -5021,7 +5021,7 @@
                                 "lValueRequested": false,
                                 "names": [],
                                 "nodeType": "FunctionCall",
-                                "src": "3233:50:2",
+                                "src": "3186:50:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_tuple$__$",
                                   "typeString": "tuple()"
@@ -5029,7 +5029,7 @@
                               },
                               "id": 749,
                               "nodeType": "EmitStatement",
-                              "src": "3228:55:2"
+                              "src": "3181:55:2"
                             },
                             {
                               "expression": {
@@ -5039,7 +5039,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 739,
-                                "src": "3345:13:2",
+                                "src": "3258:13:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
@@ -5048,7 +5048,7 @@
                               "functionReturnParameters": 721,
                               "id": 751,
                               "nodeType": "Return",
-                              "src": "3338:20:2"
+                              "src": "3251:20:2"
                             }
                           ]
                         }
@@ -5073,7 +5073,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 723,
-                      "src": "3029:1:2",
+                      "src": "3025:1:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -5088,13 +5088,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 571,
-                      "src": "3034:9:2",
+                      "src": "3030:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "3029:14:2",
+                    "src": "3025:14:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -5112,7 +5112,7 @@
                         "name": "i",
                         "nodeType": "VariableDeclaration",
                         "scope": 755,
-                        "src": "3014:9:2",
+                        "src": "3010:9:2",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -5123,7 +5123,7 @@
                           "id": 722,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
-                          "src": "3014:7:2",
+                          "src": "3010:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -5144,7 +5144,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "3026:1:2",
+                      "src": "3022:1:2",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -5153,7 +5153,7 @@
                       "value": "1"
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "3014:13:2"
+                    "src": "3010:13:2"
                   },
                   "loopExpression": {
                     "expression": {
@@ -5166,7 +5166,7 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": false,
-                      "src": "3045:3:2",
+                      "src": "3041:3:2",
                       "subExpression": {
                         "argumentTypes": null,
                         "id": 729,
@@ -5174,7 +5174,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 723,
-                        "src": "3045:1:2",
+                        "src": "3041:1:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -5187,10 +5187,10 @@
                     },
                     "id": 731,
                     "nodeType": "ExpressionStatement",
-                    "src": "3045:3:2"
+                    "src": "3041:3:2"
                   },
                   "nodeType": "ForStatement",
-                  "src": "3009:376:2"
+                  "src": "3005:285:2"
                 },
                 {
                   "expression": {
@@ -5198,61 +5198,61 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "hexValue": "495046532068617368206e6f7420666f756e6420666f722074686520676976656e206265656b65657065722061646472657373",
+                        "hexValue": "30",
                         "id": 757,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
-                        "kind": "string",
+                        "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "3402:53:2",
+                        "src": "3311:1:2",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_0c7a25c2f0b8f26506fda282783162feb6b03ed1b78a81abba73e7c4df90587f",
-                          "typeString": "literal_string \"IPFS hash not found for the given beekeeper address\""
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
                         },
-                        "value": "IPFS hash not found for the given beekeeper address"
+                        "value": "0"
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_stringliteral_0c7a25c2f0b8f26506fda282783162feb6b03ed1b78a81abba73e7c4df90587f",
-                          "typeString": "literal_string \"IPFS hash not found for the given beekeeper address\""
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
                         }
                       ],
                       "id": 756,
-                      "name": "revert",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        782,
-                        783
-                      ],
-                      "referencedDeclaration": 783,
-                      "src": "3395:6:2",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "3303:7:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
-                        "typeString": "function (string memory) pure"
-                      }
+                        "typeIdentifier": "t_type$_t_bytes32_$",
+                        "typeString": "type(bytes32)"
+                      },
+                      "typeName": "bytes32"
                     },
                     "id": 758,
                     "isConstant": false,
                     "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
+                    "isPure": true,
+                    "kind": "typeConversion",
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3395:61:2",
+                    "src": "3303:10:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
                     }
                   },
+                  "functionReturnParameters": 721,
                   "id": 759,
-                  "nodeType": "ExpressionStatement",
-                  "src": "3395:61:2"
+                  "nodeType": "Return",
+                  "src": "3296:17:2"
                 }
               ]
             },
@@ -5331,17 +5331,17 @@
               "src": "2988:9:2"
             },
             "scope": 762,
-            "src": "2908:556:2",
+            "src": "2908:441:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 763,
-        "src": "118:3349:2"
+        "src": "118:3234:2"
       }
     ],
-    "src": "52:3415:2"
+    "src": "52:3300:2"
   },
   "compiler": {
     "name": "solc",
@@ -5351,12 +5351,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xcC217a04D6629F150FEcD22Ba56A684D338a829A",
-      "transactionHash": "0x65a6bd95db32a1e085d8a0150bc243a8a154d365684c57c31766c4b36071bd8f"
+      "address": "0x8e7a52f11D603E17334b6358BD062590013f467b",
+      "transactionHash": "0x4f49768609283e24d85c500ac38d5581090fe2ae7c7501b5cc0a702a8870b129"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2024-04-21T09:29:43.814Z",
+  "updatedAt": "2024-04-21T23:28:40.633Z",
   "devdoc": {
     "methods": {}
   },

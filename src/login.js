@@ -27,13 +27,23 @@ loginButton.addEventListener('click', async (event) => {
 
       // Send beekeeper address to HashStorage contract
       await hashStorage.deployed().then(instance => {
-        return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount });
-      }).then(instance => {
-        // Send hash retreived to the getIPFSHashByBeekeeperAddress function
-        return instance.getIPFSHashByBeekeeperAddress(currentAccount, { from: currentAccount });
-      });
-      console.log('Beekeeper address stored in HashStorage contract:', currentAccount);
-      console.log('log the hash retrevied:');
+        return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount }).then(() => {
+          return instance.getIPFSHashByBeekeeperAddress(currentAccount, { from: currentAccount })
+        .then(retrievedHash => {
+            if (typeof retrievedHash === 'string' && retrievedHash === "no hash found") {
+                console.log('No hash found for this beekeeper address.');
+            } else {
+                console.log('Retrieved IPFS hash:', retrievedHash);
+                // Process the retrieved hash
+            }
+        })
+        .catch(error => { // Handle errors from getIPFSHashByBeekeeperAddress
+            console.error('Error retrieving hash:', error);
+        });
+}).catch(error => { // Handle errors from deployed() or other parts
+    console.error('Error deploying contract or other issues:', error);
+});
+    });
 
       // Send beekeeper address to BeekeeperContract
       await beekeeperContract.deployed().then(instance => {

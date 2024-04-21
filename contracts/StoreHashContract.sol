@@ -57,13 +57,13 @@ contract HashStorage {
 
     // Function to retrieve the stored on-chain IPFS hash associated with a beekeeper address 
     function getIPFSHashByBeekeeperAddress(address beekeeperAddress) public returns (bytes32) {
-        for (uint256 i = 1; i <= numHashes; i++) {
-            if (hashes[i].beekeeperAddress == beekeeperAddress) {
-                bytes32 retrievedHash = hashes[i].ipfsHash; // Access the sotred IPFS hash
-                emit IPFSHashRetrieved(beekeeperAddress, retrievedHash); // Emit the IPFSHashRetrieved event
-                return retrievedHash;
-            }
+    for (uint256 i = 1; i <= numHashes; i++) {
+        if (hashes[i].beekeeperAddress == beekeeperAddress) {
+            bytes32 retrievedHash = hashes[i].ipfsHash;
+            emit IPFSHashRetrieved(beekeeperAddress, retrievedHash);
+            return retrievedHash;
         }
-        revert("IPFS hash not found for the given beekeeper address");
     }
+    return bytes32(0); // Return 0 if no hash is found
+}
 }
