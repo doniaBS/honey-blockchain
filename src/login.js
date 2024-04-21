@@ -28,8 +28,12 @@ loginButton.addEventListener('click', async (event) => {
       // Send beekeeper address to HashStorage contract
       await hashStorage.deployed().then(instance => {
         return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount });
+      }).then(instance => {
+        // Send hash retreived to the getIPFSHashByBeekeeperAddress function
+        return instance.getIPFSHashByBeekeeperAddress(currentAccount, { from: currentAccount });
       });
       console.log('Beekeeper address stored in HashStorage contract:', currentAccount);
+      console.log('log the hash retrevied:');
 
       // Send beekeeper address to BeekeeperContract
       await beekeeperContract.deployed().then(instance => {
