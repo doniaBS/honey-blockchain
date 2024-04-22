@@ -27,31 +27,16 @@ loginButton.addEventListener('click', async (event) => {
 
       // Send beekeeper address to HashStorage contract
       await hashStorage.deployed().then(instance => {
-        return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount }).then(() => {
-          return instance.getIPFSHashByBeekeeperAddress(currentAccount, { from: currentAccount })
-        .then(retrievedHash => {
-            if (typeof retrievedHash === 'string' && retrievedHash === "no hash found") {
-                console.log('No hash found for this beekeeper address.');
-            } else {
-                console.log('Retrieved IPFS hash:', retrievedHash);
-                // Process the retrieved hash
-            }
-        })
-        .catch(error => { // Handle errors from getIPFSHashByBeekeeperAddress
-            console.error('Error retrieving hash:', error);
-        });
-}).catch(error => { // Handle errors from deployed() or other parts
-    console.error('Error deploying contract or other issues:', error);
-});
+        return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount });
     });
 
       // Send beekeeper address to BeekeeperContract
-      await beekeeperContract.deployed().then(instance => {
-        return instance.registerBeekeeperWithAddress(currentAccount, { from: currentAccount });
-      });
-      console.log('Beekeeper address registered in BeekeeperContract:', currentAccount);
-   } else {
-      console.log('No account connected to MetaMask.');
+      //await beekeeperContract.deployed().then(instance => {
+        //return instance.registerBeekeeperWithAddress(currentAccount, { from: currentAccount });
+      //});
+      //console.log('Beekeeper address registered in BeekeeperContract:', currentAccount);
+   //} else {
+      //console.log('No account connected to MetaMask.');
     }
   } catch (error) {
     console.error('Error requesting accounts:', error);
