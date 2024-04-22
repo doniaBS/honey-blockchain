@@ -35,6 +35,7 @@ contract HashStorage {
         require(beekeeperAddress != address(0), "Beekeeper address cannot be empty");
         // Emit an event to signal receiving the beekeeper address
         emit BeekeeperAddressReceived(beekeeperAddress);
+        getIPFSHashByBeekeeperAddress(beekeeperAddress);
     }
 
      // Function to generate an identifier based on timestamp and transaction hash
@@ -56,14 +57,13 @@ contract HashStorage {
     }
 
     // Function to retrieve the stored on-chain IPFS hash associated with a beekeeper address 
-    function getIPFSHashByBeekeeperAddress(address beekeeperAddress) public returns (bytes32) {
+    function getIPFSHashByBeekeeperAddress(address beekeeperAddress) public{
     for (uint256 i = 1; i <= numHashes; i++) {
         if (hashes[i].beekeeperAddress == beekeeperAddress) {
             bytes32 retrievedHash = hashes[i].ipfsHash;
             emit IPFSHashRetrieved(beekeeperAddress, retrievedHash);
-            return retrievedHash;
         }
     }
-    return bytes32(0); // Return 0 if no hash is found
+    
 }
 }
