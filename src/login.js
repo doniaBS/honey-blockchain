@@ -30,13 +30,13 @@ loginButton.addEventListener('click', async (event) => {
         return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount });
     });
 
-      // Send beekeeper address to BeekeeperContract
-      //await beekeeperContract.deployed().then(instance => {
-        //return instance.registerBeekeeperWithAddress(currentAccount, { from: currentAccount });
-      //});
-      //console.log('Beekeeper address registered in BeekeeperContract:', currentAccount);
-   //} else {
-      //console.log('No account connected to MetaMask.');
+      //Send beekeeper address to BeekeeperContract
+      await beekeeperContract.deployed().then(instance => {
+        return instance.registerBeekeeperWithAddress(currentAccount, { from: currentAccount });
+      });
+      console.log('Beekeeper address registered in BeekeeperContract:', currentAccount);
+    } else {
+      console.log('No account connected to MetaMask.');
     }
   } catch (error) {
     console.error('Error requesting accounts:', error);
