@@ -33,6 +33,8 @@ contract BeekeeperContract {
 
     // Event to signal registering the beekeeper
     event BeekeeperRegistered(address beekeeperAddress);
+    //Event to emit the association beekeeperId and Beekeeper address
+     event beekeeperIdBeekeeperAddress(uint256 beekeeperId, address beekeeperAddress);
 
     constructor(address[] memory _ganacheAddresses) public {
         require(_ganacheAddresses.length >= 10, "Insufficient addresses provided");
@@ -56,10 +58,12 @@ contract BeekeeperContract {
         beekeepers[beekeeperId].beekeeperAddress = beekeeperAddresses[beekeeperId];
     }
 
-    // Function to retrieve the Ethereum address of a beekeeper
-    function getBeekeeperAddress(uint256 beekeeperId) external view returns (address) {
+    // Function to retrieve the Ethereum address of a beekeeper based on the beekeeperId
+    function getBeekeeperAddress(uint256 beekeeperId) external returns (address) {
         require(beekeeperId < 10, "Beekeeper ID out of range");
-        return beekeeperAddresses[beekeeperId];
+        address beekeeperAddress = beekeeperAddresses[beekeeperId];
+        emit beekeeperIdBeekeeperAddress(beekeeperId, beekeeperAddress);
+        return beekeeperAddress;
     }
 
     // fucntion to check the bees state normal or not according to the udage of pests or having diseases
