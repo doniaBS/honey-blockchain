@@ -18,7 +18,7 @@ contract HashStorage {
     // Event to signal receiving the beekeeper address
     event BeekeeperAddressReceived(address beekeeperAddress);
     // Event to signal the retrieval of the on-chain IPFS hash associated with a beekeeper address
-    event IPFSHashRetrieved(address beekeeperAddress, bytes32 ipfsHash);
+    event IPFSHashRetrieved(address beekeeperAddress, bytes32 retrievedHash);
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
@@ -35,6 +35,7 @@ contract HashStorage {
         require(beekeeperAddress != address(0), "Beekeeper address cannot be empty");
         // Emit an event to signal receiving the beekeeper address
         emit BeekeeperAddressReceived(beekeeperAddress);
+        //call the function to get the beekeeper address an parameter
         getIPFSHashByBeekeeperAddress(beekeeperAddress);
     }
 
