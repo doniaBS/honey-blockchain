@@ -6,6 +6,7 @@ pragma solidity ^0.5.0;
 contract HashStorage {
     address public owner;
     uint256 public numHashes;
+    uint256[] public identifiers; // Array to keep track of keys
     //BeekeeperContract public beekeeperContract;// Reference to the BeekeeperContract's address
     struct HashInfo { 
         bytes32 ipfsHash; 
@@ -15,8 +16,6 @@ contract HashStorage {
 
     // Event to emit the stored IPFS hash
     event IPFSHashStored(uint256 identifier, bytes32 ipfsHash, address beekeeperAddress);
-    // Event to signal receiving the beekeeper address
-    event BeekeeperAddressReceived(address beekeeperAddress);
     // Event to signal the retrieval of the on-chain IPFS hash associated with a beekeeper address
     event IPFSHashRetrieved(address beekeeperAddress, bytes32 retrievedHash);
 
@@ -28,15 +27,6 @@ contract HashStorage {
     constructor() public{
         owner = msg.sender;
         //beekeeperContract = BeekeeperContract(_beekeeperContractAddress); // Initialize the BeekeeperContract instance
-    }
-
-    // Function to receive the beekeeper address from MetaMask  and trigger the IPFS hash retrieval
-    function storeBeekeeperAddress(address beekeeperAddress) public {
-        require(beekeeperAddress != address(0), "Beekeeper address cannot be empty");
-        // Emit an event to signal receiving the beekeeper address
-        emit BeekeeperAddressReceived(beekeeperAddress);
-        //call the function to get the beekeeper address an parameter
-        getIPFSHashByBeekeeperAddress(beekeeperAddress);
     }
 
      // Function to generate an identifier based on timestamp and transaction hash
@@ -52,19 +42,20 @@ contract HashStorage {
         bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));
         uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash
         hashes[identifier] = HashInfo(ipfsHash, beekeeperAddress); // Store the hash information along with the beekeeper's Ethereum address in the mapping
-        numHashes++; // Increment the number of stored hashes
+        identifiers.push(identifier); // Store the identifier in the array
         // Emit the IPFS hash stored event
         emit IPFSHashStored(identifier, ipfsHash, beekeeperAddress);
     }
 
-    // Function to retrieve the stored on-chain IPFS hash associated with a beekeeper address 
-    function getIPFSHashByBeekeeperAddress(address beekeeperAddress) public{
-    for (uint256 i = 1; i <= numHashes; i++) {
-        if (hashes[i].beekeeperAddress == beekeeperAddress) {
-            bytes32 retrievedHash = hashes[i].ipfsHash;
-            emit IPFSHashRetrieved(beekeeperAddress, retrievedHash);
+    // Function to retrieve the stored on-chain IPFS hash associated with a beekeeper address coming from metamask
+    function getIPFSHashByBeekeeperAddress(address beekeeperAddress) external {
+        require(beekeeperAddress != address(0), "Beekeeper address cannot be empty");
+        for (uint256 i = 0; i <identifiers.length; i++) {
+            uint256 identifier = identifiers[i];
+           if (hashes[identifier].beekeeperAddress == beekeeperAddress) {
+               bytes32 retrievedHash = hashes[identifier].ipfsHash;
+               emit IPFSHashRetrieved(beekeeperAddress, retrievedHash);
+            }
         }
     }
-    
-}
 }

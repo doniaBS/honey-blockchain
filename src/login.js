@@ -20,21 +20,12 @@ loginButton.addEventListener('click', async (event) => {
       const hashStorage = TruffleContract(hashStorageJSON);
       hashStorage.setProvider(window.ethereum);
 
-      // Instantiate BeekeeperContract
-      const beekeeperContractJSON = await $.getJSON('BeekeeperContract.json');
-      const beekeeperContract = TruffleContract(beekeeperContractJSON);
-      beekeeperContract.setProvider(window.ethereum);
-
       // Send beekeeper address to HashStorage contract
-      await hashStorage.deployed().then(instance => {
-        return instance.storeBeekeeperAddress(currentAccount, { from: currentAccount });
+    await hashStorage.deployed().then(async (instance) => {
+      await instance.getIPFSHashByBeekeeperAddress(currentAccount, { from: currentAccount });
     });
-
-      //Send beekeeper address to BeekeeperContract
-      await beekeeperContract.deployed().then(instance => {
-        return instance.registerBeekeeperWithAddress(currentAccount, { from: currentAccount });
-      });
-      console.log('Beekeeper address registered in BeekeeperContract:', currentAccount);
+    // Redirect to metadata.html on successful login
+    window.location.href = "http://localhost:3000/metadata.html";
     } else {
       console.log('No account connected to MetaMask.');
     }

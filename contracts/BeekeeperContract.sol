@@ -31,8 +31,6 @@ contract BeekeeperContract {
     mapping(uint => Hive) hives;
     mapping(uint256 => address) private beekeeperAddresses;
 
-    // Event to signal registering the beekeeper
-    event BeekeeperRegistered(address beekeeperAddress);
     //Event to emit the association beekeeperId and Beekeeper address
      event beekeeperIdBeekeeperAddress(uint256 beekeeperId, address beekeeperAddress);
 
@@ -43,12 +41,6 @@ contract BeekeeperContract {
         for (uint256 i = 0; i < 10; i++) {
             beekeeperAddresses[i] = _ganacheAddresses[i];
         }
-    }
-    // Function to receive the beekeeper address from MetaMask
-    function registerBeekeeperWithAddress(address beekeeperAddress) public {
-      require(beekeeperAddress != address(0), "Beekeeper address cannot be empty");
-       // Emit an event to signal registering the beekeeper
-       emit BeekeeperRegistered(beekeeperAddress);
     }
 
     // Function to register a beekeeper with a specified Ethereum address
