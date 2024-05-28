@@ -4,7 +4,11 @@ const ws = new WebSocket('ws://localhost:8765');
 ws.onmessage = function(event) {
     const received_data = JSON.parse(event.data);
     console.log(received_data)
-    displayMetadata(received_data);
+    if (received_data.error) {
+        displayError(received_data.error);
+    } else {
+        displayMetadata(received_data);
+    }
 };
 
 ws.onerror = function(error) {
@@ -36,4 +40,10 @@ document.getElementById("weight").innerHTML = `Weight: ${received_data.weight}kg
 document.getElementById("gps-location").innerHTML = `GPS location: ${received_data.gps_location}`;
 document.getElementById("has-pests").innerHTML = `Has pests: ${received_data.has_pests}`;
 document.getElementById("has-diseases").innerHTML = `Has diseases: ${received_data.has_diseases}`;
-document.getElementById("timestamp").innerHTML = `Timestamp: ${received_data.timestamp}`; }
+document.getElementById("timestamp").innerHTML = `Timestamp: ${received_data.timestamp}`; 
+}
+
+function displayError(error_message) {
+    // Display error message on the web page
+    metadataContainer.innerHTML = `<p>Error: ${error_message}</p>`;
+}
