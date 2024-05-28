@@ -7,7 +7,7 @@
       "test": "test"
    },
    "scripts": {
-      "dev": "lite-server",
+      "dev": "lite-server -c bs-config.json",
       "test": "echo \"Error: no test specified\" && sexit 1"
    },
    "author": "donia.bensedrine@sesame.com.tn",
@@ -22,6 +22,7 @@
       "truffle-contract": "3.0.6"
    },
    "dependencies": {
-      "request": "^2.88.2"
+      "request": "^2.88.2",
+      "ws": "^8.17.0"
    }
 }
