@@ -3,9 +3,8 @@ const ws = new WebSocket('ws://localhost:8765');
 
 ws.onmessage = function(event) {
     const received_data = JSON.parse(event.data);
-    console.log(received_data)
     if (received_data.error) {
-        displayError(received_data.error);
+        displayError(received_data); // Access the error message directly
     } else {
         displayMetadata(received_data);
     }
@@ -22,6 +21,15 @@ ws.onopen = function() {
 ws.onclose = function() {
     console.log('WebSocket connection closed');
 };
+
+const messageContainer = document.getElementById('message-container');
+
+function displayError(received_data) {
+    // Clear the container before displaying new data (optional)
+    messageContainer.innerHTML = '';
+    // Display error message on the web page
+    document.getElementById("error").innerHTML = `Error: ${received_data.error}`;
+}
 
 const metadataContainer = document.getElementById('metadata-container');
 
@@ -41,9 +49,4 @@ document.getElementById("gps-location").innerHTML = `GPS location: ${received_da
 document.getElementById("has-pests").innerHTML = `Has pests: ${received_data.has_pests}`;
 document.getElementById("has-diseases").innerHTML = `Has diseases: ${received_data.has_diseases}`;
 document.getElementById("timestamp").innerHTML = `Timestamp: ${received_data.timestamp}`; 
-}
-
-function displayError(error_message) {
-    // Display error message on the web page
-    metadataContainer.innerHTML = `<p>Error: ${error_message}</p>`;
 }
