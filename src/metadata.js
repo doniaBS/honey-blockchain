@@ -7,6 +7,7 @@ ws.onmessage = function(event) {
         displayError(received_data); // Access the error message directly
     } else {
         displayMetadata(received_data);
+        console.log(received_data)
     }
 };
 
@@ -46,7 +47,7 @@ document.getElementById("humidity").innerHTML = `Humidity: ${received_data.humid
 document.getElementById("co2").innerHTML = `CO2: ${received_data.co2}ppm`;
 document.getElementById("weight").innerHTML = `Weight: ${received_data.weight}kg`;
 document.getElementById("gps-location").innerHTML = `GPS location: ${received_data.gps_location}`;
-document.getElementById("has-pests").innerHTML = `Has pests: ${received_data.has_pests}`;
-document.getElementById("has-diseases").innerHTML = `Has diseases: ${received_data.has_diseases}`;
+document.getElementById("has-pests").innerHTML = `Has pests: ${received_data.hasPests}`;
+document.getElementById("has-diseases").innerHTML = `Has diseases: ${received_data.hasDiseases}`;
 document.getElementById("timestamp").innerHTML = `Timestamp: ${received_data.timestamp}`; 
 }
