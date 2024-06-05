@@ -28,6 +28,17 @@ ws.onclose = function() {
     console.log('WebSocket connection closed');
 };
 
+// Initialize the map
+var map = L.map('map').setView([0, 0], 2); // Initial view set to coordinates (0, 0) with zoom level 2
+
+// Add the OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Create a marker variable
+var marker;
+
 function displayMetadata(received_data) {
   // Access each property and display it in the HTML elements
 document.getElementById("beekeeper-address").innerHTML = `Beekeeper Address: ${received_data.beekeeper_address}`;
@@ -41,6 +52,22 @@ document.getElementById("gps-location").innerHTML = `GPS location: ${received_da
 document.getElementById("has-pests").innerHTML = `Has pests: ${received_data.hasPests}`;
 document.getElementById("has-diseases").innerHTML = `Has diseases: ${received_data.hasDiseases}`;
 document.getElementById("timestamp").innerHTML = `Timestamp: ${received_data.timestamp}`; 
+
+// Extract latitude and longitude from the GPS location string
+var coords = received_data.gps_location.split(",");
+var latitude = parseFloat(coords[0]);
+var longitude = parseFloat(coords[1]);
+
+// Update the map with the new coordinates
+if (marker) {
+    map.removeLayer(marker); // Remove the existing marker if it exists
+}
+
+marker = L.marker([latitude, longitude]).addTo(map)
+    .bindPopup(`Hive ID: ${received_data.hive_id}<br>Beekeeper Address: ${received_data.beekeeper_address}`)
+    .openPopup();
+
+map.setView([latitude, longitude], 13); // Set the map view to the new coordinates with a zoom level of 13
 }
 
 function displayBlockchainData(received_data){
@@ -51,3 +78,4 @@ document.getElementById("hum-state").innerHTML = `Humidity should be between 90%
 document.getElementById("co2-state").innerHTML = `CO2 should be between 1000ppm and 4000ppm: ${received_data.co2_state}`;
 document.getElementById("weight-state").innerHTML = `Weight should be between 30kg and 80kg: ${received_data.weight_state}`;
 }
+

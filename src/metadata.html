@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beekeeper Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="style-metadata.css">
 </head>
 <body>
@@ -26,8 +27,10 @@
     <p id="hum-state"></p>
     <p id="co2-state"></p>
     <p id="weight-state"></p>
+  <div id="map" style="height: 400px; width: 100%;"></div>
 
   <!-- JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="metadata.js"></script>
 </body>
 </html>
