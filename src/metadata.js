@@ -71,7 +71,7 @@ map.setView([latitude, longitude], 13); // Set the map view to the new coordinat
 }
 
 function displayBlockchainData(received_data){
-document.getElementById("bee-state").innerHTML = `Bees State (has diseases or not): ${received_data.bee_state}`;
+document.getElementById("bee-state").innerHTML = `Bees State (bees are healthy or not): ${received_data.bee_state}`;
 document.getElementById("honey-organic").innerHTML = `Honey quality (organic or not): ${received_data.honey_quality}`;
 document.getElementById("temp-state").innerHTML = `Temperature should be between 30°C and 35°C: ${received_data.temp_state}`;
 document.getElementById("hum-state").innerHTML = `Humidity should be between 90% and 95%: ${received_data.hum_state}`;
