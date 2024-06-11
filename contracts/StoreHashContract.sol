@@ -41,7 +41,8 @@ contract HashStorage {
         address beekeeperAddress = msg.sender; // Obtain beekeeper's Ethereum address
         bytes32 transactionHash = keccak256(abi.encodePacked(msg.sender, now));
         uint256 identifier = generateIdentifier(transactionHash); // Associate the Generated identifier with each hash
-        hashes[identifier] = HashInfo(ipfsHash, beekeeperAddress); // Store the hash information along with the beekeeper's Ethereum address in the mapping
+        // Store the hash information along with the beekeeper's Ethereum address in the mapping
+        hashes[identifier] = HashInfo(ipfsHash, beekeeperAddress); 
         identifiers.push(identifier); // Store the identifier in the array
         // Emit the IPFS hash stored event
         emit IPFSHashStored(identifier, ipfsHash, beekeeperAddress);
